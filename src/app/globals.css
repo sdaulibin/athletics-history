@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  /* 跑道赭红主题 */
+  --color-track-50: #fdf6f3;
+  --color-track-100: #f9e8e1;
+  --color-track-200: #f2cfc1;
+  --color-track-300: #e8ab94;
+  --color-track-400: #dc8163;
+  --color-track-500: #cd5c39;
+  --color-track-600: #b84626;
+  --color-track-700: #9a3412;
+  --color-track-800: #7f2d14;
+  --color-track-900: #6b2712;
+  --color-track-950: #3b130a;
+
+  --font-sans:
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC",
+    system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono:
+    ui-monospace, "SF Mono", "JetBrains Mono", "Menlo", "Cascadia Mono",
+    monospace;
+}
+
+body {
+  background-color: var(--color-track-50);
+  color: var(--color-track-950);
+}
+
+::selection {
+  background-color: var(--color-track-200);
+}

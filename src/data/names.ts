@@ -1,0 +1,35 @@
+/**
+ * 运动员中文译名表
+ * 按姓氏字母序；新增前必须 grep 防重复。
+ */
+export const zhNames: Record<string, string> = {
+  "Jim Hines": "吉姆·海因斯",
+  "Calvin Smith": "卡尔文·史密斯",
+  "Ben Johnson": "本·约翰逊",
+  "Carl Lewis": "卡尔·刘易斯",
+  "Leroy Burrell": "勒罗伊·伯勒尔",
+  "Donovan Bailey": "多诺万·贝利",
+  "Maurice Greene": "莫里斯·格林",
+  "Tim Montgomery": "蒂姆·蒙哥马利",
+  "Justin Gatlin": "贾斯汀·加特林",
+  "Asafa Powell": "阿萨法·鲍威尔",
+  "Usain Bolt": "尤塞恩·博尔特",
+  "Tyson Gay": "泰森·盖伊",
+  "Yohan Blake": "约翰·布雷克",
+  "Christian Coleman": "克里斯蒂安·科尔曼",
+  "Fred Kerley": "弗雷德·凯尔利",
+  "Noah Lyles": "诺亚·莱尔斯",
+  "Lamont Marcell Jacobs": "拉蒙特·马塞尔·雅各布斯",
+  "Linford Christie": "林福德·克里斯蒂",
+  "Kim Collins": "金·柯林斯",
+  "Allan Wells": "阿兰·韦尔斯",
+  "Femi Ogunode": "费米·奥古诺德",
+  "Frankie Fredericks": "弗兰基·弗雷德里克斯",
+  "Ato Boldon": "阿托·博尔顿",
+  "Bruny Surin": "布鲁尼·苏林",
+  "Su Bingtian": "苏炳添",
+  "Xie Zhenye": "谢震业",
+  "Lao Yi": "劳义",
+  "Zhang Peimeng": "张培萌",
+  "Hu Kai": "胡凯",
+};
