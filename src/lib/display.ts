@@ -19,6 +19,7 @@ export const COUNTRIES: Record<string, { zh: string; flag: string | null }> = {
   CAN: { zh: "加拿大", flag: "🇨🇦" },
   GBR: { zh: "英国", flag: "🇬🇧" },
   TRI: { zh: "特立尼达和多巴哥", flag: "🇹🇹" },
+  THA: { zh: "泰国", flag: "🇹🇭" },
   CHN: { zh: "中国", flag: "🇨🇳" },
   JPN: { zh: "日本", flag: "🇯🇵" },
   QAT: { zh: "卡塔尔", flag: "🇶🇦" },
