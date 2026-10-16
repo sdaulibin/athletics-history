@@ -1,9 +1,12 @@
 import type { EventGroup } from "@/lib/types";
 import { mens100m } from "./events/mens-100m";
 import { mens100mChampions } from "./champions/mens-100m";
+import { womens100m } from "./events/womens-100m";
+import { womens100mChampions } from "./champions/womens-100m";
 
 export const events = [
   { ...mens100m, champions: mens100mChampions },
+  { ...womens100m, champions: womens100mChampions },
 ];
 
 export const groupMeta: Record<EventGroup, { zh: string }> = {

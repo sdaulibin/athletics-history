@@ -95,7 +95,7 @@ export interface SecondaryRecord {
   note?: string;
 }
 
-/** 历史最好成绩（用于项目历史前十榜） */
+/** 历史最好成绩榜条目（前 N 名，成绩升序） */
 export interface TopPerformance {
   mark: string;
   holder: string;
@@ -126,8 +126,10 @@ export interface AthleticsEvent {
   champions?: ChampionEntry[];
   asianRecord?: SecondaryRecord;
   chineseRecord?: SecondaryRecord;
-  top10?: TopPerformance[];
-  top10Note?: string;
+  topList?: TopPerformance[];
+  /** 榜单标题，如 "前五十"；并列同成绩全部收录 */
+  topListTitle?: string;
+  topListNote?: string;
   history: HistorySection[];
   sources: SourceLink[];
 }

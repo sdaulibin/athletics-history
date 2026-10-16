@@ -11,7 +11,8 @@ import type { AthleticsEvent } from "@/lib/types";
  *    蒙哥马利 2002、加特林 2006；
  *  - 9.58 悬置十七年，为电计时时代最长寿的世界纪录之一；
  *  - 冠军榜已补 2025 东京世锦赛（塞维尔 9.77）与 2026 名古屋亚运
- *    （汶颂 9.90）；其余届次的空缺见冠军榜头注。
+ *    （汶颂 9.90）；其余届次的空缺见冠军榜头注；
+ *  - 历史最好成绩榜扩至前五十：9.80 以内合规成绩全录（56 条，含并列）。
  */
 export const mens100m: AthleticsEvent = {
   slug: "mens-100m",
@@ -54,20 +55,66 @@ export const mens100m: AthleticsEvent = {
     note: "此前个人最好为9.91（2018，两次）；从劳义到苏炳添，中国百米的十年爬坡",
   },
 
-  top10: [
-    { mark: "9.58", holder: "Usain Bolt", country: "JAM", date: "2009-08-16", meet: "2009年柏林世锦赛", wind: "+0.9", wr: true, note: "现世界纪录" },
+  topList: [
+{ mark: "9.58", holder: "Usain Bolt", country: "JAM", date: "2009-08-16", meet: "2009年柏林世锦赛", wind: "+0.9", wr: true, note: "现世界纪录" },
     { mark: "9.63", holder: "Usain Bolt", country: "JAM", date: "2012-08-05", meet: "2012年伦敦奥运会", wind: "+1.5", note: "奥运会纪录" },
     { mark: "9.69", holder: "Usain Bolt", country: "JAM", date: "2008-08-16", meet: "2008年北京奥运会", wind: "0.0" },
-    { mark: "9.69", holder: "Tyson Gay", country: "USA", date: "2009-09-20", meet: "上海国际田径黄金大奖赛", wind: "+2.0", note: "顺风合规上限；史上最快非奥运/世锦赛成绩" },
-    { mark: "9.69", holder: "Yohan Blake", country: "JAM", date: "2012-08-23", meet: "洛桑国际田径赛", note: "布雷克生涯巅峰" },
-    { mark: "9.71", holder: "Tyson Gay", country: "USA", date: "2009-08-16", meet: "2009年柏林世锦赛", wind: "+0.9", note: "史上最快亚军——博尔特身侧的9.71" },
-    { mark: "9.72", holder: "Usain Bolt", country: "JAM", date: "2008-05-31", meet: "纽约田径大奖赛", wind: "+1.7" },
-    { mark: "9.72", holder: "Asafa Powell", country: "JAM", date: "2008-09-02", meet: "洛桑国际田径赛" },
-    { mark: "9.76", holder: "Christian Coleman", country: "USA", date: "2019-09-28", meet: "2019年多哈世锦赛", note: "非博尔特体系的最快成绩" },
-    { mark: "9.77", holder: "Asafa Powell", country: "JAM", date: "2005-06-14", meet: "雅典国际田径赛", wind: "+1.6" },
+    { mark: "9.69", holder: "Tyson Gay", country: "USA", date: "2009-09-20", meet: "上海国际田径黄金大奖赛", wind: "+2.0", note: "顺风合规上限" },
+    { mark: "9.69", holder: "Yohan Blake", country: "JAM", date: "2012-08-23", meet: "洛桑钻石联赛", wind: "-0.1" },
+    { mark: "9.71", holder: "Tyson Gay", country: "USA", date: "2009-08-16", meet: "2009年柏林世锦赛", wind: "+0.9", note: "史上最快亚军" },
+    { mark: "9.72", holder: "Usain Bolt", country: "JAM", date: "2008-05-31", meet: "纽约田径大奖赛", wind: "+1.7", note: "时为世界纪录" },
+    { mark: "9.72", holder: "Asafa Powell", country: "JAM", date: "2008-09-02", meet: "洛桑国际田径赛", wind: "+0.2" },
+    { mark: "9.74", holder: "Asafa Powell", country: "JAM", date: "2007-09-09", meet: "列蒂国际田径赛", wind: "+1.7", flags: ["sf"], note: "半决赛；时为世界纪录" },
+    { mark: "9.74", holder: "Justin Gatlin", country: "USA", date: "2015-05-15", meet: "多哈钻石联赛", wind: "+0.9" },
+    { mark: "9.75", holder: "Yohan Blake", country: "JAM", date: "2012-06-29", meet: "牙买加奥运选拔赛", wind: "+1.1" },
+    { mark: "9.75", holder: "Yohan Blake", country: "JAM", date: "2012-08-05", meet: "2012年伦敦奥运会", wind: "+1.5" },
+    { mark: "9.75", holder: "Justin Gatlin", country: "USA", date: "2015-06-04", meet: "罗马钻石联赛", wind: "+0.9" },
+    { mark: "9.75", holder: "Justin Gatlin", country: "USA", date: "2015-07-09", meet: "洛桑钻石联赛", wind: "+1.4" },
+    { mark: "9.75", holder: "Kishane Thompson", country: "JAM", date: "2025-06-27", meet: "牙买加锦标赛", wind: "+0.8", note: "2025年世界最好成绩" },
+    { mark: "9.76", holder: "Usain Bolt", country: "JAM", date: "2008-05-03", meet: "牙买加国际邀请赛", wind: "+1.8" },
+    { mark: "9.76", holder: "Usain Bolt", country: "JAM", date: "2011-09-16", meet: "布鲁塞尔钻石联赛", wind: "+1.3" },
+    { mark: "9.76", holder: "Usain Bolt", country: "JAM", date: "2012-05-31", meet: "罗马钻石联赛", wind: "-0.1" },
+    { mark: "9.76", holder: "Yohan Blake", country: "JAM", date: "2012-08-30", meet: "苏黎世钻石联赛", wind: "+1.4" },
+    { mark: "9.76", holder: "Christian Coleman", country: "USA", date: "2019-09-28", meet: "2019年多哈世锦赛", wind: "+0.6" },
+    { mark: "9.76", holder: "Trayvon Bromell", country: "USA", date: "2021-09-18", meet: "内罗毕基普基诺经典赛", wind: "+1.2", note: "高原成绩" },
+    { mark: "9.76", holder: "Fred Kerley", country: "USA", date: "2022-06-24", meet: "美国世锦赛选拔赛", wind: "+1.4", flags: ["sf"] },
+    { mark: "9.77", holder: "Asafa Powell", country: "JAM", date: "2005-06-14", meet: "雅典国际田径赛", wind: "+1.6", note: "牙买加时代的开端" },
+    { mark: "9.77", holder: "Asafa Powell", country: "JAM", date: "2006-06-11", meet: "盖茨黑德国际田径赛", wind: "+1.5" },
+    { mark: "9.77", holder: "Asafa Powell", country: "JAM", date: "2006-08-18", meet: "苏黎世国际田径赛", wind: "+1.0" },
+    { mark: "9.77", holder: "Tyson Gay", country: "USA", date: "2008-06-28", meet: "美国奥运选拔赛", wind: "+1.6", flags: ["h"], note: "1/4决赛" },
+    { mark: "9.77", holder: "Usain Bolt", country: "JAM", date: "2008-09-05", meet: "布鲁塞尔国际田径赛", wind: "-1.3" },
+    { mark: "9.77", holder: "Asafa Powell", country: "JAM", date: "2008-09-07", meet: "列蒂国际田径赛", wind: "+0.9", flags: ["h"] },
+    { mark: "9.77", holder: "Tyson Gay", country: "USA", date: "2009-07-10", meet: "罗马国际田径赛", wind: "+0.4" },
+    { mark: "9.77", holder: "Usain Bolt", country: "JAM", date: "2013-08-11", meet: "2013年莫斯科世锦赛", wind: "-0.3" },
+    { mark: "9.77", holder: "Justin Gatlin", country: "USA", date: "2014-09-05", meet: "布鲁塞尔钻石联赛", wind: "+0.6" },
+    { mark: "9.77", holder: "Justin Gatlin", country: "USA", date: "2015-08-23", meet: "2015年北京世锦赛", wind: "+0.9", flags: ["sf"], note: "该届最快成绩出自半决赛" },
+    { mark: "9.77", holder: "Trayvon Bromell", country: "USA", date: "2021-06-05", meet: "米拉马尔（美国）", wind: "+1.5" },
+    { mark: "9.77", holder: "Ferdinand Omanyala", country: "KEN", date: "2021-09-18", meet: "内罗毕基普基诺经典赛", wind: "+1.2", note: "非洲纪录；同场负于布罗梅尔；高原" },
+    { mark: "9.77", holder: "Fred Kerley", country: "USA", date: "2022-06-24", meet: "美国世锦赛选拔赛", wind: "+1.8" },
+    { mark: "9.77", holder: "Kishane Thompson", country: "JAM", date: "2024-06-28", meet: "牙买加锦标赛", wind: "+0.9" },
+    { mark: "9.77", holder: "Oblique Seville", country: "JAM", date: "2025-09-14", meet: "2025年东京世锦赛", wind: "+0.3", note: "个人最佳，夺冠" },
+    { mark: "9.78", holder: "Asafa Powell", country: "JAM", date: "2007-09-09", meet: "列蒂国际田径赛", wind: "0.0", note: "同日半决赛9.74后的决赛" },
+    { mark: "9.78", holder: "Tyson Gay", country: "USA", date: "2010-08-13", meet: "伦敦钻石联赛", wind: "-0.4" },
+    { mark: "9.78", holder: "Nesta Carter", country: "JAM", date: "2010-08-29", meet: "列蒂国际田径赛", wind: "+0.9" },
+    { mark: "9.78", holder: "Asafa Powell", country: "JAM", date: "2011-06-30", meet: "洛桑钻石联赛", wind: "+1.0" },
+    { mark: "9.78", holder: "Justin Gatlin", country: "USA", date: "2015-07-17", meet: "摩纳哥钻石联赛", wind: "-0.3" },
+    { mark: "9.79", holder: "Maurice Greene", country: "USA", date: "1999-06-16", meet: "雅典国际田径赛", wind: "+0.1", note: "首破9.80大关" },
+    { mark: "9.79", holder: "Usain Bolt", country: "JAM", date: "2009-07-17", meet: "巴黎黄金联赛", wind: "-0.2" },
+    { mark: "9.79", holder: "Tyson Gay", country: "USA", date: "2010-08-27", meet: "布鲁塞尔钻石联赛", wind: "+0.1" },
+    { mark: "9.79", holder: "Tyson Gay", country: "USA", date: "2011-06-04", meet: "克莱蒙特（美国）", wind: "+1.1", flags: ["h"] },
+    { mark: "9.79", holder: "Usain Bolt", country: "JAM", date: "2012-06-07", meet: "奥斯陆钻石联赛", wind: "+0.6" },
+    { mark: "9.79", holder: "Justin Gatlin", country: "USA", date: "2012-08-05", meet: "2012年伦敦奥运会", wind: "+1.5", note: "季军" },
+    { mark: "9.79", holder: "Usain Bolt", country: "JAM", date: "2015-08-23", meet: "2015年北京世锦赛", wind: "-0.5" },
+    { mark: "9.79", holder: "Christian Coleman", country: "USA", date: "2018-08-31", meet: "布鲁塞尔钻石联赛", wind: "-0.3" },
+    { mark: "9.79", holder: "Fred Kerley", country: "USA", date: "2022-07-15", meet: "2022年尤金世锦赛", wind: "+0.1", flags: ["h"] },
+    { mark: "9.79", holder: "Ferdinand Omanyala", country: "KEN", date: "2024-06-15", meet: "内罗毕基普基诺经典赛", wind: "+1.5", note: "高原成绩" },
+    { mark: "9.79", holder: "Noah Lyles", country: "USA", date: "2024-08-04", meet: "2024年巴黎奥运会", wind: "+1.0", note: "9.784，千分位险胜汤普森" },
+    { mark: "9.79", holder: "Kishane Thompson", country: "JAM", date: "2024-08-04", meet: "2024年巴黎奥运会", wind: "+1.0", note: "9.789" },
+    { mark: "9.79", holder: "Kenneth Bednarek", country: "USA", date: "2025-08-01", meet: "美国锦标赛（尤金）", wind: "+1.8", note: "200米名将的个人最佳" },
+    { mark: "9.79", holder: "Noah Lyles", country: "USA", date: "2026-07-24", meet: "美国锦标赛（纽约）", wind: "+0.8", note: "2026年世界最好成绩" },
   ],
-  top10Note:
-    "历史前十被博尔特（三席）、鲍威尔（两席）与盖伊（两席）瓜分，门槛9.77；亚洲与中国的最高刻度是苏炳添的9.83（2021东京奥运半决赛），与第十位相差0.06秒。部分成绩的风速未能核实，已缺省处理。",
+  topListTitle: "前五十",
+  topListNote: "第50位的成绩为9.79——历史上有14次并列，全部收录，共56条，恰为史上跑进9.80的全部合规成绩。博尔特独占12席并包揽前三；2024巴黎奥运莱尔斯与汤普森的9.784对9.789，双双以9.79并列在列。第21、34、52位为内罗毕高原（约1800米）成绩，依规合规。亚洲与中国的最高刻度仍是苏炳添的9.83（2021东京奥运半决赛），约合并列第96位，距第50位差0.04秒。",
 
   history: [
     {
@@ -110,8 +157,8 @@ export const mens100m: AthleticsEvent = {
       url: "https://worldathletics.org/records/by-category/world-records",
     },
     {
-      label: "Olympedia：田径奖牌数据库",
-      url: "https://www.olympedia.org/results/80132",
+      label: "Alltime-Athletics：男子100米历史成绩总榜（Peter Larsson 维护）",
+      url: "http://www.alltime-athletics.com/m_100ok.htm",
     },
   ],
 };

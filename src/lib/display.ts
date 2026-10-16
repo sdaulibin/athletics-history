@@ -31,6 +31,7 @@ export const COUNTRIES: Record<string, { zh: string; flag: string | null }> = {
   AUS: { zh: "澳大利亚", flag: "🇦🇺" },
   URS: { zh: "苏联", flag: null },
   GDR: { zh: "民主德国", flag: null },
+  FRG: { zh: "联邦德国", flag: null },
   RUS: { zh: "俄罗斯", flag: "🇷🇺" },
   KEN: { zh: "肯尼亚", flag: "🇰🇪" },
   ETH: { zh: "埃塞俄比亚", flag: "🇪🇹" },
@@ -50,6 +51,11 @@ export const COUNTRIES: Record<string, { zh: string; flag: string | null }> = {
   FIN: { zh: "芬兰", flag: "🇫🇮" },
   NZL: { zh: "新西兰", flag: "🇳🇿" },
   GRE: { zh: "希腊", flag: "🇬🇷" },
+  BLR: { zh: "白俄罗斯", flag: "🇧🇾" },
+  UKR: { zh: "乌克兰", flag: "🇺🇦" },
+  BRN: { zh: "巴林", flag: "🇧🇭" },
+  LCA: { zh: "圣卢西亚", flag: "🇱🇨" },
+  IVB: { zh: "英属维尔京群岛", flag: "🇻🇬" },
 };
 
 export const FLAG_ZH: Record<RecordFlag, string> = {

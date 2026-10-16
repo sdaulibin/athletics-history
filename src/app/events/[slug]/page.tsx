@@ -25,6 +25,11 @@ const CHART_MARKS: Record<string, ChartMark[]> = {
     { date: "1988-09-24", label: "汉城之殇" },
     { date: "2009-08-16", label: "柏林 9.58" },
   ],
+  "womens-100m": [
+    { date: "1968-10-15", label: "电计时时代开始" },
+    { date: "1977-07-01", label: "首次突破11秒" },
+    { date: "1988-07-16", label: "印第安纳波利斯 10.49" },
+  ],
 };
 
 const UNIT_OF: Record<string, string> = {
@@ -253,17 +258,17 @@ export default async function EventPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* 历史前十成绩 */}
-      {event.top10 && event.top10.length > 0 && (
+      {/* 历史最好成绩榜 */}
+      {event.topList && event.topList.length > 0 && (
         <section className="mt-10">
           <h2 className="text-2xl font-bold text-track-950">
-            历史最好成绩 · 前十
+            历史最好成绩 · {event.topListTitle ?? `前${event.topList.length}`}
             <span className="ml-2 align-middle text-sm font-normal text-slate-400">
               室外 · 合规风速 · 截至 {event.dataAsOf}
             </span>
           </h2>
-          {event.top10Note && (
-            <p className="mt-1 text-sm text-slate-500">{event.top10Note}</p>
+          {event.topListNote && (
+            <p className="mt-1 text-sm text-slate-500">{event.topListNote}</p>
           )}
           <div className="mt-4 overflow-x-auto rounded-2xl border border-slate-200 bg-white">
             <table className="w-full min-w-[560px] text-sm">
@@ -277,7 +282,7 @@ export default async function EventPage({ params }: PageProps) {
                 </tr>
               </thead>
               <tbody>
-                {event.top10.map((r, i) => {
+                {event.topList.map((r, i) => {
                   const c = countryOf(r.country);
                   return (
                     <tr

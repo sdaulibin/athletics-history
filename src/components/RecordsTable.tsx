@@ -2,13 +2,23 @@ import { FLAG_ZH, countryOf, holderZh, isRatified, zhDate } from "@/lib/display"
 import type { RecordEntry } from "@/lib/types";
 
 export function RecordsTable({ records }: { records: RecordEntry[] }) {
-  let no = 0;
-  const rows = records.map((r) => {
-    const ratified = isRatified(r);
-    if (ratified) no += 1;
-    return { r, ratified, no: ratified ? no : null };
-  });
-  const currentNo = no;
+  const { rows, count } = records.reduce<{
+    rows: { r: RecordEntry; ratified: boolean; no: number | null }[];
+    count: number;
+  }>(
+    (acc, r) => {
+      const ratified = isRatified(r);
+      return {
+        rows: [
+          ...acc.rows,
+          { r, ratified, no: ratified ? acc.count + 1 : null },
+        ],
+        count: ratified ? acc.count + 1 : acc.count,
+      };
+    },
+    { rows: [], count: 0 },
+  );
+  const currentNo = count;
   const country = (code: string) => countryOf(code);
 
   return (
