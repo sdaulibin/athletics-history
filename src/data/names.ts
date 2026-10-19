@@ -69,6 +69,7 @@ export const zhNames: Record<string, string> = {
   "Sha'Carri Richardson": "沙卡里·理查德森",
   "Shelly-Ann Fraser-Pryce": "谢莉-安·弗雷泽-普赖斯",
   "Su Bingtian": "苏炳添",
+  "Susanthika Jayasinghe": "苏桑蒂卡·贾亚辛格",
   "Tim Montgomery": "蒂姆·蒙哥马利",
   "Tori Bowie": "托莉·鲍伊",
   "Torri Edwards": "托丽·爱德华兹",

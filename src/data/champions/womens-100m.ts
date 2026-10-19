@@ -6,7 +6,10 @@ import type { ChampionEntry } from "@/lib/types";
  *  - 奥运会：1968 起电计时时代全 15 届收录（1968–2024）；
  *    手计时时代（1928–1964）暂缺；
  *  - 世锦赛：1983–2025 全 20 届收录；
- *  - 亚运会：2010 及以前各届未能核实，暂缺；2014 起收录。
+ *  - 亚运会：1998–2026 全八届收录；2006 多哈、2010 广州
+ *    于2026年10月补核（搜狐/新华社当年战报）；
+ *    1998 李雪梅 11.05 为亚运史上最快夺冠成绩，因超风速
+ *    未计为赛会纪录，故赛会纪录沿革为 11.15（2002）→11.06（2026）。
  */
 export const womens100mChampions: ChampionEntry[] = [
   // —— 奥运会 ——
@@ -48,9 +51,13 @@ export const womens100mChampions: ChampionEntry[] = [
   { series: "worlds", year: 1987, city: "罗马", champion: "Florence Griffith-Joyner", country: "USA", mark: "10.90", note: "首枚世界大赛金牌；次年即10.49" },
   { series: "worlds", year: 1983, city: "赫尔辛基", champion: "Marlies Göhr", country: "GDR", mark: "10.97", note: "首届世锦赛；时世界纪录保持者" },
 
-  // —— 亚运会（2010 及以前暂缺） ——
+  // —— 亚运会（1998–2026 全八届） ——
   { series: "asiangames", year: 2026, city: "名古屋", champion: "Chen Yujie", country: "CHN", mark: "11.06", note: "17岁首战亚运；打破尘封24年的赛会纪录（贾亚辛格2002年11.15）；亚洲纪录10.79未破" },
   { series: "asiangames", year: 2022, city: "杭州", champion: "Ge Manqi", country: "CHN", mark: "11.23", note: "赛事于2023年举行；中国选手第六次登顶亚运女子百米" },
   { series: "asiangames", year: 2018, city: "雅加达", champion: "Edidiong Odiong", country: "BRN", mark: "11.30", note: "韦永丽11.33摘铜；当届兼获200米金牌" },
   { series: "asiangames", year: 2014, city: "仁川", champion: "Wei Yongli", country: "CHN", mark: "11.48", note: "绝杀日本名将福岛千里" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "Chisato Fukushima", country: "JPN", mark: "11.33", note: "0.01秒险胜卫冕冠军胡比耶娃（11.34，起跑反应0.113全场最快）；日本自1966年后时隔44年重夺该项目亚运金牌，亦为日本代表团当届田径首金；越南的武氏香11.43摘铜，中国的陶宇佳第五、叶佳贝第七" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "Guzel Khubbieva", country: "UZB", mark: "11.27", note: "个人赛季最好成绩，决赛力克斯里兰卡的贾亚辛格；其“卫冕冠军”身份见2010年新华社战报，成绩暂单源（搜狐当年战报）待复核" },
+  { series: "asiangames", year: 2002, city: "釜山", champion: "Susanthika Jayasinghe", country: "SRI", mark: "11.15", note: "赛会纪录，保持24年，至2026年被陈妤颉的11.06改写" },
+  { series: "asiangames", year: 1998, city: "曼谷", champion: "Li Xuemei", country: "CHN", mark: "11.05", note: "亚运史上最快的女子百米夺冠成绩，但未计为赛会纪录——当日多枪顺风超规（她半决赛的10.99亦超风速），故2002年贾亚辛格的11.15才被承认为新赛会纪录；贾亚辛格决赛临阵退赛，组委会仍为其保留第六道；决赛前夜李雪梅高烧39℃；当届兼获4×100米接力金牌与200米银牌" },
 ];
