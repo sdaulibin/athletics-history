@@ -7,12 +7,18 @@ import { mens200m } from "./events/mens-200m";
 import { mens200mChampions } from "./champions/mens-200m";
 import { womens200m } from "./events/womens-200m";
 import { womens200mChampions } from "./champions/womens-200m";
+import { mens400m } from "./events/mens-400m";
+import { mens400mChampions } from "./champions/mens-400m";
+import { womens400m } from "./events/womens-400m";
+import { womens400mChampions } from "./champions/womens-400m";
 
 export const events = [
   { ...mens100m, champions: mens100mChampions },
   { ...womens100m, champions: womens100mChampions },
   { ...mens200m, champions: mens200mChampions },
   { ...womens200m, champions: womens200mChampions },
+  { ...mens400m, champions: mens400mChampions },
+  { ...womens400m, champions: womens400mChampions },
 ];
 
 export const groupMeta: Record<EventGroup, { zh: string }> = {
