@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { SERIES_META, countryOf, holderZh } from "@/lib/display";
+import { SERIES_META, countryOf, holderEn, holderZh } from "@/lib/display";
 import type { ChampionEntry, MeetSeries } from "@/lib/types";
 
 const ORDER: MeetSeries[] = [
@@ -75,9 +75,11 @@ export function ChampionsExplorer({ champions }: { champions: ChampionEntry[] })
                   </td>
                   <td className="px-4 py-2.5">
                     <span className="font-medium">{holderZh(r.champion)}</span>
-                    <span className="ml-1.5 text-xs text-slate-400">
-                      {r.champion}
-                    </span>
+                    {holderEn(r.champion) && (
+                      <span className="ml-1.5 text-xs text-slate-400">
+                        {holderEn(r.champion)}
+                      </span>
+                    )}
                   </td>
                   <td className="whitespace-nowrap px-4 py-2.5">
                     {c.flag && <span className="mr-1">{c.flag}</span>}

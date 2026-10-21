@@ -5,10 +5,10 @@ import { ProgressionChart, type ChartMark } from "@/components/ProgressionChart"
 import { RecordsTable } from "@/components/RecordsTable";
 import { ChampionsExplorer } from "@/components/ChampionsExplorer";
 import { events, genderMeta, groupMeta } from "@/data";
-import { zhNames } from "@/data/names";
 import {
   FLAG_ZH,
   countryOf,
+  holderEn,
   holderZh,
   isRatified,
   markValue,
@@ -140,9 +140,11 @@ export default async function EventPage({ params }: PageProps) {
           <div className="lg:border-l lg:border-white/20 lg:pl-8">
             <div className="text-xl font-semibold">
               {holderZh(wr.holder)}
-              <span className="ml-2 text-sm font-normal text-track-200">
-                {wr.holder}
-              </span>
+              {holderEn(wr.holder) && (
+                <span className="ml-2 text-sm font-normal text-track-200">
+                  {holderEn(wr.holder)}
+                </span>
+              )}
             </div>
             <div className="mt-1 text-track-100">
               {zhDate(wr.date)}
@@ -220,9 +222,9 @@ export default async function EventPage({ params }: PageProps) {
                   <div className="mt-2 text-slate-700">
                     {rc.flag && <span className="mr-1">{rc.flag}</span>}
                     {holderZh(r.holder)}
-                    {zhNames[r.holder] && (
+                    {holderEn(r.holder) && (
                       <span className="ml-1.5 text-xs text-slate-400">
-                        {r.holder}
+                        {holderEn(r.holder)}
                       </span>
                     )}
                   </div>
@@ -309,9 +311,11 @@ export default async function EventPage({ params }: PageProps) {
                       </td>
                       <td className="px-4 py-2.5">
                         <span className="font-medium">{holderZh(r.holder)}</span>
-                        <span className="ml-1.5 text-xs text-slate-400">
-                          {r.holder}
-                        </span>
+                        {holderEn(r.holder) && (
+                          <span className="ml-1.5 text-xs text-slate-400">
+                            {holderEn(r.holder)}
+                          </span>
+                        )}
                       </td>
                       <td className="whitespace-nowrap px-4 py-2.5">
                         {c.flag && <span className="mr-1">{c.flag}</span>}

@@ -1,4 +1,4 @@
-import { FLAG_ZH, countryOf, holderZh, isRatified, zhDate } from "@/lib/display";
+import { FLAG_ZH, countryOf, holderEn, holderZh, isRatified, zhDate } from "@/lib/display";
 import type { RecordEntry } from "@/lib/types";
 
 export function RecordsTable({ records }: { records: RecordEntry[] }) {
@@ -65,9 +65,11 @@ export function RecordsTable({ records }: { records: RecordEntry[] }) {
                   <span className={isCurrent ? "font-semibold" : ""}>
                     {holderZh(r.holder)}
                   </span>
-                  <span className="ml-1.5 text-xs text-slate-400">
-                    {r.holder}
-                  </span>
+                  {holderEn(r.holder) && (
+                    <span className="ml-1.5 text-xs text-slate-400">
+                      {holderEn(r.holder)}
+                    </span>
+                  )}
                 </td>
                 <td className="whitespace-nowrap px-4 py-2.5">
                   {c.flag && <span className="mr-1">{c.flag}</span>}

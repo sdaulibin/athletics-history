@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { events, siteConfig, groupMeta } from "@/data";
-import { countryOf, holderZh, isRatified, markValue, zhDate } from "@/lib/display";
+import { countryOf, holderEn, holderZh, isRatified, markValue, zhDate } from "@/lib/display";
 import type { EventGroup } from "@/lib/types";
 import type { RecordEntry } from "@/lib/types";
 
@@ -133,9 +133,11 @@ export default function Home() {
               </div>
               <div className="mt-3 text-lg font-semibold text-track-950">
                 {holderZh(featuredWr.holder)}
-                <span className="ml-2 text-sm font-normal text-slate-400">
-                  {featuredWr.holder}
-                </span>
+                {holderEn(featuredWr.holder) && (
+                  <span className="ml-2 text-sm font-normal text-slate-400">
+                    {holderEn(featuredWr.holder)}
+                  </span>
+                )}
               </div>
               <p className="mt-2 text-sm leading-relaxed text-slate-600">
                 {zhDate(featuredWr.date)}，{featuredWr.meet}决赛（顺风{featuredWr.wind} m/s）。
@@ -168,9 +170,11 @@ export default function Home() {
                   <div className="mt-3 text-lg font-semibold text-track-950">
                     {c.flag && <span className="mr-1">{c.flag}</span>}
                     {holderZh(wr.holder)}
-                    <span className="ml-2 text-sm font-normal text-slate-400">
-                      {wr.holder}
-                    </span>
+                    {holderEn(wr.holder) && (
+                      <span className="ml-2 text-sm font-normal text-slate-400">
+                        {holderEn(wr.holder)}
+                      </span>
+                    )}
                   </div>
                 </div>
                 <Link

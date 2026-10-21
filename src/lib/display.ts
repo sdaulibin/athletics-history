@@ -1,4 +1,4 @@
-import { zhNames } from "@/data/names";
+import { enNames, zhNames } from "@/data/names";
 import type { MeetSeries, RecordFlag } from "@/lib/types";
 
 /** 大赛系列元信息 */
@@ -49,6 +49,10 @@ export const COUNTRIES: Record<string, { zh: string; flag: string | null }> = {
   HUN: { zh: "匈牙利", flag: "🇭🇺" },
   SWE: { zh: "瑞典", flag: "🇸🇪" },
   FIN: { zh: "芬兰", flag: "🇫🇮" },
+  MAR: { zh: "摩洛哥", flag: "🇲🇦" },
+  SOM: { zh: "索马里", flag: "🇸🇴" },
+  LUX: { zh: "卢森堡", flag: "🇱🇺" },
+  TAN: { zh: "坦桑尼亚", flag: "🇹🇿" },
   NZL: { zh: "新西兰", flag: "🇳🇿" },
   GRE: { zh: "希腊", flag: "🇬🇷" },
   BLR: { zh: "白俄罗斯", flag: "🇧🇾" },
@@ -74,6 +78,22 @@ export const COUNTRIES: Record<string, { zh: string; flag: string | null }> = {
   TUR: { zh: "土耳其", flag: "🇹🇷" },
   UZB: { zh: "乌兹别克斯坦", flag: "🇺🇿" },
   ZAM: { zh: "赞比亚", flag: "🇿🇲" },
+  ALG: { zh: "阿尔及利亚", flag: "🇩🇿" },
+  BDI: { zh: "布隆迪", flag: "🇧🇮" },
+  BUL: { zh: "保加利亚", flag: "🇧🇬" },
+  CZE: { zh: "捷克", flag: "🇨🇿" },
+  DEN: { zh: "丹麦", flag: "🇩🇰" },
+  IRI: { zh: "伊朗", flag: "🇮🇷" },
+  IRL: { zh: "爱尔兰", flag: "🇮🇪" },
+  IRQ: { zh: "伊拉克", flag: "🇮🇶" },
+  KOR: { zh: "韩国", flag: "🇰🇷" },
+  MOZ: { zh: "莫桑比克", flag: "🇲🇿" },
+  NOR: { zh: "挪威", flag: "🇳🇴" },
+  ROU: { zh: "罗马尼亚", flag: "🇷🇴" },
+  SLO: { zh: "斯洛文尼亚", flag: "🇸🇮" },
+  SUD: { zh: "苏丹", flag: "🇸🇩" },
+  SUI: { zh: "瑞士", flag: "🇨🇭" },
+  UGA: { zh: "乌干达", flag: "🇺🇬" },
 };
 
 export const FLAG_ZH: Record<RecordFlag, string> = {
@@ -90,6 +110,11 @@ export function countryOf(code: string): { zh: string; flag: string | null } {
 /** 运动员中文译名（names.ts 未收录时回退为原文） */
 export function holderZh(holder: string): string {
   return zhNames[holder] ?? holder;
+}
+
+/** 运动员拉丁字母原名（运动员列小字显示；未收录时返回 null 不显示） */
+export function holderEn(holder: string): string | null {
+  return enNames[holder] ?? null;
 }
 
 /** 成绩数值化：时间 "9.58"→9.58、"1:42.09"→102.09；距离/分数原样 parseFloat */
