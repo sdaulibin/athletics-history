@@ -9,7 +9,7 @@ import type { ChampionEntry } from "@/lib/types";
  */
 export const mens1500mChampions: ChampionEntry[] = [
   // —— 奥运会 ——
-  { series: "olympics", year: 2024, city: "巴黎", champion: "科尔·霍克", country: "USA", mark: "3:27.65", or: true, note: "奥运纪录；克尔3:27.79、努古塞3:27.80——史上最快的奥运前三" },
+  { series: "olympics", year: 2024, city: "巴黎", champion: "科尔·霍克", country: "USA", mark: "3:27.65", or: true, note: "克尔3:27.79、努古塞3:27.80——史上最快的奥运前三" },
   { series: "olympics", year: 2020, city: "东京", champion: "雅各布·英格布里格森", country: "NOR", mark: "3:28.32", note: "赛事于2021年举行；21岁的挪威人在最后一圈解决战斗" },
   { series: "olympics", year: 2016, city: "里约热内卢", champion: "马修·森特罗维茨", country: "USA", mark: "3:50.00", note: "1932年以来最慢的夺冠成绩，却是一场教科书级的节奏控制——美国时隔108年的该项目奥运金牌" },
   { series: "olympics", year: 2012, city: "伦敦", champion: "陶菲克·马克卢菲", country: "ALG", mark: "3:34.08", note: "此前一天因预赛消极比赛被临时禁赛，申诉获准后登场夺冠——戏剧性拉满的一周" },

@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { EventsExplorer } from "@/components/EventsExplorer";
 import type { EventCardData } from "@/components/EventCard";
 import { events, genderMeta, groupMeta } from "@/data";
-import { countryOf, holderZh, isRatified, zhDate } from "@/lib/display";
+import { SERIES_META, countryOf, holderZh, isRatified, zhDate } from "@/lib/display";
+import type { MeetSeries } from "@/lib/types";
 
 export const metadata: Metadata = {
   title: "全部项目",
@@ -30,6 +31,9 @@ export default function EventsPage() {
       count: ratified.length,
       firstYear: Number(e.progression[0].date.slice(0, 4)),
       championCount: e.champions?.length ?? 0,
+      seriesZh: (["olympics", "worlds", "worldsIndoor", "asiangames"] as MeetSeries[])
+        .filter((s) => e.champions?.some((c) => c.series === s))
+        .map((s) => SERIES_META[s].zh),
     };
   });
 

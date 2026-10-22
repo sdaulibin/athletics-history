@@ -30,6 +30,17 @@ const CHART_MARKS: Record<string, ChartMark[]> = {
     { date: "1977-07-01", label: "首次突破11秒" },
     { date: "1988-07-16", label: "印第安纳波利斯 10.49" },
   ],
+  "mens-pole-vault": [
+    { date: "1984-05-26", label: "布勃卡登场" },
+    { date: "1994-07-31", label: "6.14 悬置二十六年" },
+    { date: "2020-09-17", label: "杜普兰蒂斯 6.15" },
+    { date: "2025-09-15", label: "东京 6.30" },
+  ],
+  "womens-pole-vault": [
+    { date: "1996-01-28", label: "乔治 4.41" },
+    { date: "2005-07-22", label: "首次越过5米" },
+    { date: "2009-08-28", label: "苏黎世 5.06" },
+  ],
 };
 
 const UNIT_OF: Record<string, string> = {
@@ -165,8 +176,8 @@ export default async function EventPage({ params }: PageProps) {
             )}
             <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm text-track-100">
               <span>
-                第 <b className="font-mono text-base">{ratified.length}</b>{" "}
-                次刷新（被承认）
+                收录 <b className="font-mono text-base">{ratified.length}</b>{" "}
+                条纪录（被承认）
               </span>
               <span>
                 首项纪录 {first.date.slice(0, 4)} 年
@@ -266,7 +277,7 @@ export default async function EventPage({ params }: PageProps) {
           <h2 className="text-2xl font-bold text-track-950">
             历史最好成绩 · {event.topListTitle ?? `前${event.topList.length}`}
             <span className="ml-2 align-middle text-sm font-normal text-slate-400">
-              室外 · 合规风速 · 截至 {event.dataAsOf}
+              {event.markKind === "time" ? "室外 · 合规风速" : "室外"} · 截至 {event.dataAsOf}
             </span>
           </h2>
           {event.topListNote && (
@@ -403,7 +414,7 @@ export default async function EventPage({ params }: PageProps) {
           ))}
         </ul>
         <p className="mt-3 text-xs leading-relaxed text-slate-400">
-          纪录演进数据对照维基百科 World record progression 系列条目与 World Athletics 官方纪录逐条核对；赛事与地点名为中文译写。被取消的纪录（兴奋剂追回等）以「已被取消」标记保留为史实。如发现错漏，欢迎对照来源指出。
+          纪录演进数据对照世界田联（World Athletics）官方纪录与 Alltime-Athletics 历史总榜逐条核对；赛事与地点名为中文译写。被取消的纪录（兴奋剂追回等）以「已被取消」标记保留为史实。如发现错漏，欢迎对照来源指出。
         </p>
       </section>
 

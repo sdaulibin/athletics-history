@@ -9,7 +9,7 @@ import type { ChampionEntry } from "@/lib/types";
  */
 export const womens1500mChampions: ChampionEntry[] = [
   // —— 奥运会 ——
-  { series: "olympics", year: 2024, city: "巴黎", champion: "费斯·基皮耶贡", country: "KEN", mark: "3:51.29", or: true, note: "奥运纪录；三连冠——决赛前五名全部跑进3:54" },
+  { series: "olympics", year: 2024, city: "巴黎", champion: "费斯·基皮耶贡", country: "KEN", mark: "3:51.29", or: true, note: "三连冠——决赛前五名全部跑进3:54" },
   { series: "olympics", year: 2020, city: "东京", champion: "费斯·基皮耶贡", country: "KEN", mark: "3:53.11", note: "赛事于2021年举行；卫冕之战" },
   { series: "olympics", year: 2016, city: "里约热内卢", champion: "费斯·基皮耶贡", country: "KEN", mark: "4:08.92", note: "首届参赛即夺冠——慢决赛中的后程决胜" },
   { series: "olympics", year: 2012, city: "伦敦", champion: "玛丽亚姆·优素福·贾马尔", country: "BRN", mark: "4:10.74", note: "递补冠军：原冠亚军均因兴奋剂被取消——史上最曲折的领奖台之一" },

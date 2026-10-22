@@ -30,6 +30,8 @@ export const COUNTRIES: Record<string, { zh: string; flag: string | null }> = {
   FRA: { zh: "法国", flag: "🇫🇷" },
   AUS: { zh: "澳大利亚", flag: "🇦🇺" },
   URS: { zh: "苏联", flag: null },
+  EUN: { zh: "独联体", flag: null },
+  PHI: { zh: "菲律宾", flag: "🇵🇭" },
   GDR: { zh: "民主德国", flag: null },
   FRG: { zh: "联邦德国", flag: null },
   RUS: { zh: "俄罗斯", flag: "🇷🇺" },

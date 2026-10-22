@@ -16,6 +16,8 @@ export interface EventCardData {
   count: number;
   firstYear: number;
   championCount: number;
+  /**  championship series 的中文标签（按收录情况动态生成） */
+  seriesZh: string[];
 }
 
 export function EventCard({ ev }: { ev: EventCardData }) {
@@ -48,7 +50,7 @@ export function EventCard({ ev }: { ev: EventCardData }) {
         {ev.count} 条世界纪录 · {ev.firstYear} 年至今
         {ev.championCount > 0 && (
           <span className="mt-1 block text-track-600">
-            🏆 历届大赛冠军 {ev.championCount} 条（奥运 / 世锦赛 / 泛太 / 欧锦 / 亚运）
+            🏆 历届大赛冠军 {ev.championCount} 条（{ev.seriesZh.join(" / ")}）
           </span>
         )}
       </div>
