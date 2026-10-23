@@ -6,7 +6,8 @@ import type { AthleticsEvent } from "@/lib/types";
  *
  * 收录口径（宁缺毋滥）：
  *  - 世界纪录演进只收室外纪录，起于1995年（库岑科娃的68.14米）；
- *  - 历史最好成绩榜以 77.90 米为门槛：合规成绩全录（含并列）共 78 条；
+ *  - 历史最好成绩榜以 77.90 米为门槛：合规成绩全录（含并列）共 79 条；其中 2026 年
+ *    名古屋亚运会的 78.27 米由本站据亚运奖牌表补入（全史总榜尚未收录该场）；
  *  - 链球无风速影响。 */
 export const womensHammer: AthleticsEvent = {
   slug: "womens-hammer",
@@ -106,12 +107,13 @@ export const womensHammer: AthleticsEvent = {
     { mark: "78.30", holder: "安妮塔·沃达尔奇克", country: "POL", date: "2010-06-06", place: "比得哥什（波兰）" },
     { mark: "78.30", holder: "蕾切尔·里奇森", country: "USA", date: "2026-04-11", place: "Ramona" },
     { mark: "78.28", holder: "安妮塔·沃达尔奇克", country: "POL", date: "2015-06-21", place: "切博克萨雷（俄罗斯）" },
+    { mark: "78.27", holder: "张家乐", country: "CHN", date: "2026-09-29", meet: "亚运会", place: "名古屋", note: "亚运会金牌；源页标为「地区纪录」" },
     { mark: "78.24", holder: "安妮塔·沃达尔奇克", country: "POL", date: "2015-07-21", place: "克拉科夫" },
     { mark: "78.24", holder: "迪安娜·普莱斯", country: "USA", date: "2019-07-27", place: "得梅因（美国）" },
-    { mark: "78.22", holder: "赵杰", country: "CHN", date: "2026-04-03", place: "成都" },
     { mark: "78.22", holder: "安妮塔·沃达尔奇克", country: "POL", date: "2013-08-21", place: "Dubnica nad Váhom" },
-    { mark: "78.18", holder: "迪安娜·普莱斯", country: "USA", date: "2023-07-09", place: "尤金" },
+    { mark: "78.22", holder: "赵杰", country: "CHN", date: "2026-04-03", place: "成都" },
     { mark: "78.18", holder: "布鲁克·安德森", country: "USA", date: "2021-04-10", place: "Wichita" },
+    { mark: "78.18", holder: "迪安娜·普莱斯", country: "USA", date: "2023-07-09", place: "尤金" },
     { mark: "78.17", holder: "安妮塔·沃达尔奇克", country: "POL", date: "2014-07-26", place: "Cetniewo" },
     { mark: "78.16", holder: "安妮塔·沃达尔奇克", country: "POL", date: "2015-09-13", place: "华沙" },
     { mark: "78.14", holder: "安妮塔·沃达尔奇克", country: "POL", date: "2016-07-08", place: "Amsterdam" },
@@ -121,8 +123,8 @@ export const womensHammer: AthleticsEvent = {
     { mark: "78.09", holder: "卡姆琳·罗杰斯", country: "CAN", date: "2025-07-19", place: "马德里" },
     { mark: "78.07", holder: "贝蒂·海德勒", country: "GER", date: "2012-05-24", place: "俄斯特拉发" },
     { mark: "78.06", holder: "安妮塔·沃达尔奇克", country: "POL", date: "2022-05-07", place: "内罗毕" },
-    { mark: "78.00", holder: "安妮塔·沃达尔奇克", country: "POL", date: "2017-06-03", place: "São Bernardo do Campo" },
     { mark: "78.00", holder: "贝蒂·海德勒", country: "GER", date: "2014-06-16", place: "俄斯特拉发" },
+    { mark: "78.00", holder: "安妮塔·沃达尔奇克", country: "POL", date: "2017-06-03", place: "São Bernardo do Campo" },
     { mark: "78.00", holder: "贾妮·卡萨纳沃伊德", country: "USA", date: "2022-05-21", place: "Tucson" },
     { mark: "77.99", holder: "布鲁克·安德森", country: "USA", date: "2021-04-24", place: "尤金" },
     { mark: "77.96", holder: "安妮塔·沃达尔奇克", country: "POL", date: "2009-08-22", place: "柏林" },
@@ -132,9 +134,9 @@ export const womensHammer: AthleticsEvent = {
     { mark: "77.93", holder: "卡姆琳·罗杰斯", country: "CAN", date: "2025-05-31", place: "内罗毕" },
     { mark: "77.90", holder: "安妮塔·沃达尔奇克", country: "POL", date: "2017-08-07", place: "伦敦" },
   ],
-  topListTitle: "前 78 名",
+  topListTitle: "前 79 名",
   topListNote:
-    "门槛 77.90 米，合规成绩全录（含并列）。沃达尔奇克独占榜单前六，罗杰斯（81.13）是唯一挤进前三的现役选手；中国的张家乐以78.64米排在前列，与亚洲纪录同条。",
+    "门槛 77.90 米，合规成绩全录（含并列）。沃达尔奇克独占榜单前六，罗杰斯（81.13）是唯一挤进前三的现役选手；中国的张家乐以78.64米（亚洲纪录）与78.27米（名古屋亚运金牌）两条成绩入榜。",
   history: [
     {
       heading: "从库岑科娃到沃达尔奇克",

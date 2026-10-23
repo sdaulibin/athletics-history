@@ -7,7 +7,8 @@ import type { AthleticsEvent } from "@/lib/types";
  * 收录口径（宁缺毋滥）：
  *  - 世界纪录演进只收室外纪录、现行规格（1999年起，女子标枪重心前移后的规格），
  *    起于1999年（里维罗的62.44米）；
- *  - 历史最好成绩榜以 67.70 米为门槛：合规成绩全录（含并列）共 75 条；
+ *  - 历史最好成绩榜以 67.70 米为门槛：合规成绩全录（含并列）共 76 条；其中 2026 年
+ *    名古屋亚运会的 70.46 米由本站据亚运奖牌表补入（全史总榜尚未收录该场）；
  *  - 标枪无风速影响。 */
 export const womensJavelin: AthleticsEvent = {
   slug: "womens-javelin",
@@ -56,6 +57,7 @@ export const womensJavelin: AthleticsEvent = {
     { mark: "71.42", holder: "巴尔博拉·什波塔科娃", country: "CZE", date: "2008-08-21", place: "北京" },
     { mark: "71.40", holder: "玛丽亚·安德烈伊奇克", country: "POL", date: "2021-05-09", place: "斯普利特（克罗地亚）" },
     { mark: "70.53", holder: "玛丽亚·阿巴库莫娃", country: "RUS", date: "2013-09-01", place: "柏林" },
+    { mark: "70.46", holder: "严子怡", country: "CHN", date: "2026-09-29", meet: "亚运会", place: "名古屋", note: "亚运会金牌与赛会纪录（GR）" },
     { mark: "70.20", holder: "克里斯蒂娜·奥贝格弗尔", country: "GER", date: "2007-06-23", place: "慕尼黑" },
     { mark: "70.03", holder: "克里斯蒂娜·奥贝格弗尔", country: "GER", date: "2005-08-14", place: "赫尔辛基" },
     { mark: "69.82", holder: "奥斯莱迪斯·梅嫩德斯", country: "CUB", date: "2001-08-29", place: "北京" },
@@ -120,12 +122,12 @@ export const womensJavelin: AthleticsEvent = {
     { mark: "67.76", holder: "维多利亚·哈德森", country: "AUT", date: "2025-06-28", place: "Maribor" },
     { mark: "67.72", holder: "克里斯蒂娜·奥贝格弗尔", country: "GER", date: "2008-06-12", place: "俄斯特拉发" },
     { mark: "67.72", holder: "吕会会", country: "CHN", date: "2019-04-13", place: "黄石" },
-    { mark: "67.70", holder: "凯尔西-李·巴伯", country: "AUS", date: "2019-07-09", place: "琉森" },
     { mark: "67.70", holder: "克里斯蒂娜·奥贝格弗尔", country: "GER", date: "2013-05-31", place: "尤金" },
+    { mark: "67.70", holder: "凯尔西-李·巴伯", country: "AUS", date: "2019-07-09", place: "琉森" },
   ],
-  topListTitle: "前 75 名",
+  topListTitle: "前 76 名",
   topListNote:
-    "门槛 67.70 米，合规成绩全录（含并列）。什波塔科娃与梅嫩德斯占据榜单前段；中国的严子怡以71.74米（2026年厦门）排在历史第二，与亚洲纪录同条；吕会会、刘诗颖、徐德妹等也在列。",
+    "门槛 67.70 米，合规成绩全录（含并列）。什波塔科娃与梅嫩德斯占据榜单前段；中国的严子怡以71.74米（2026年厦门钻石联赛）排在历史第二、与亚洲纪录同条，另有70.46米（2026年名古屋亚运，赛会纪录）、68.75米（摩纳哥）、68.42米（布鲁塞尔）、68.05米（布达佩斯）四条入榜——全榜70米以上共12条，她占两席；吕会会、刘诗颖、徐德妹等也在列。",
   history: [
     {
       heading: "旧规格与东欧",
