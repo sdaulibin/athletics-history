@@ -60,7 +60,8 @@ export type MeetSeries =
   | "olympics" // 奥运会
   | "worlds" // 世界锦标赛（室外）
   | "worldsIndoor" // 世界室内锦标赛
-  | "asiangames"; // 亚运会
+  | "asiangames" // 亚运会
+  | "majors"; // 世界马拉松大满贯
 
 /** 一届大赛的冠军成绩 */
 export interface ChampionEntry {

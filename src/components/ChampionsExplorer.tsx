@@ -9,6 +9,7 @@ const ORDER: MeetSeries[] = [
   "worlds",
   "worldsIndoor",
   "asiangames",
+  "majors",
 ];
 
 export function ChampionsExplorer({ champions }: { champions: ChampionEntry[] }) {

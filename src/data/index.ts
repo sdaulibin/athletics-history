@@ -23,6 +23,44 @@ import { mensPoleVault } from "./events/mens-pole-vault";
 import { mensPoleVaultChampions } from "./champions/mens-pole-vault";
 import { womensPoleVault } from "./events/womens-pole-vault";
 import { womensPoleVaultChampions } from "./champions/womens-pole-vault";
+import { mensHighJump } from "./events/mens-high-jump";
+import { mensHighJumpChampions } from "./champions/mens-high-jump";
+import { womensHighJump } from "./events/womens-high-jump";
+import { womensHighJumpChampions } from "./champions/womens-high-jump";
+import { mensLongJump } from "./events/mens-long-jump";
+import { mensLongJumpChampions } from "./champions/mens-long-jump";
+import { womensLongJump } from "./events/womens-long-jump";
+import { womensLongJumpChampions } from "./champions/womens-long-jump";
+import { mensTripleJump } from "./events/mens-triple-jump";
+import { mensTripleJumpChampions } from "./champions/mens-triple-jump";
+import { womensTripleJump } from "./events/womens-triple-jump";
+import { womensTripleJumpChampions } from "./champions/womens-triple-jump";
+import { mens5000m } from "./events/mens-5000m";
+import { mens5000mChampions } from "./champions/mens-5000m";
+import { womens5000m } from "./events/womens-5000m";
+import { womens5000mChampions } from "./champions/womens-5000m";
+import { mens10000m } from "./events/mens-10000m";
+import { mens10000mChampions } from "./champions/mens-10000m";
+import { womens10000m } from "./events/womens-10000m";
+import { womens10000mChampions } from "./champions/womens-10000m";
+import { mensShotPut } from "./events/mens-shot-put";
+import { mensShotPutChampions } from "./champions/mens-shot-put";
+import { womensShotPut } from "./events/womens-shot-put";
+import { womensShotPutChampions } from "./champions/womens-shot-put";
+import { mensHammer } from "./events/mens-hammer";
+import { mensHammerChampions } from "./champions/mens-hammer";
+import { womensHammer } from "./events/womens-hammer";
+import { womensHammerChampions } from "./champions/womens-hammer";
+import { mensJavelin } from "./events/mens-javelin";
+import { mensJavelinChampions } from "./champions/mens-javelin";
+import { womensJavelin } from "./events/womens-javelin";
+import { womensJavelinChampions } from "./champions/womens-javelin";
+import { mensMarathon } from "./events/mens-marathon";
+import { mensMarathonChampions } from "./champions/mens-marathon";
+import { womensMarathon } from "./events/womens-marathon";
+import { womensMarathonChampions } from "./champions/womens-marathon";
+
+
 
 export const events = [
   { ...mens100m, champions: mens100mChampions },
@@ -37,6 +75,24 @@ export const events = [
   { ...womens1500m, champions: womens1500mChampions },
   { ...mensPoleVault, champions: mensPoleVaultChampions },
   { ...womensPoleVault, champions: womensPoleVaultChampions },
+  { ...mensHighJump, champions: mensHighJumpChampions },
+  { ...womensHighJump, champions: womensHighJumpChampions },
+  { ...mensLongJump, champions: mensLongJumpChampions },
+  { ...womensLongJump, champions: womensLongJumpChampions },
+  { ...mensTripleJump, champions: mensTripleJumpChampions },
+  { ...womensTripleJump, champions: womensTripleJumpChampions },
+  { ...mens5000m, champions: mens5000mChampions },
+  { ...womens5000m, champions: womens5000mChampions },
+  { ...mens10000m, champions: mens10000mChampions },
+  { ...womens10000m, champions: womens10000mChampions },
+  { ...mensShotPut, champions: mensShotPutChampions },
+  { ...womensShotPut, champions: womensShotPutChampions },
+  { ...mensHammer, champions: mensHammerChampions },
+  { ...womensHammer, champions: womensHammerChampions },
+  { ...mensJavelin, champions: mensJavelinChampions },
+  { ...womensJavelin, champions: womensJavelinChampions },
+  { ...mensMarathon, champions: mensMarathonChampions },
+  { ...womensMarathon, champions: womensMarathonChampions },
 ];
 
 export const groupMeta: Record<EventGroup, { zh: string }> = {

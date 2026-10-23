@@ -10,6 +10,7 @@ export const SERIES_META: Record<
   worlds: { zh: "世锦赛", color: "bg-track-100 text-track-700" },
   worldsIndoor: { zh: "室内世锦赛", color: "bg-violet-100 text-violet-700" },
   asiangames: { zh: "亚运会", color: "bg-rose-100 text-rose-700" },
+  majors: { zh: "六大满贯", color: "bg-sky-100 text-sky-700" },
 };
 
 /** 国家/地区：中文名 + 旗帜 emoji（历史上已消失的国家无对应 emoji） */
@@ -43,6 +44,22 @@ export const COUNTRIES: Record<string, { zh: string; flag: string | null }> = {
   BEL: { zh: "比利时", flag: "🇧🇪" },
   NAM: { zh: "纳米比亚", flag: "🇳🇦" },
   ZAF: { zh: "南非", flag: "🇿🇦" },
+  ARM: { zh: "亚美尼亚", flag: "🇦🇲" },
+  BUR: { zh: "布基纳法索", flag: "🇧🇫" },
+  CMR: { zh: "喀麦隆", flag: "🇨🇲" },
+  COL: { zh: "哥伦比亚", flag: "🇨🇴" },
+  CRO: { zh: "克罗地亚", flag: "🇭🇷" },
+  DMA: { zh: "多米尼克", flag: "🇩🇲" },
+  ERI: { zh: "厄立特里亚", flag: "🇪🇷" },
+  GEO: { zh: "格鲁吉亚", flag: "🇬🇪" },
+  KGZ: { zh: "吉尔吉斯斯坦", flag: "🇰🇬" },
+  LTU: { zh: "立陶宛", flag: "🇱🇹" },
+  PAN: { zh: "巴拿马", flag: "🇵🇦" },
+  ROC: { zh: "俄罗斯奥委会", flag: null },
+  SRB: { zh: "塞尔维亚", flag: "🇷🇸" },
+  TUN: { zh: "突尼斯", flag: "🇹🇳" },
+  VEN: { zh: "委内瑞拉", flag: "🇻🇪" },
+
   NGR: { zh: "尼日利亚", flag: "🇳🇬" },
   CIV: { zh: "科特迪瓦", flag: "🇨🇮" },
   POR: { zh: "葡萄牙", flag: "🇵🇹" },

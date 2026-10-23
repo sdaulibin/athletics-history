@@ -31,7 +31,7 @@ export default function EventsPage() {
       count: ratified.length,
       firstYear: Number(e.progression[0].date.slice(0, 4)),
       championCount: e.champions?.length ?? 0,
-      seriesZh: (["olympics", "worlds", "worldsIndoor", "asiangames"] as MeetSeries[])
+      seriesZh: (["olympics", "worlds", "worldsIndoor", "asiangames", "majors"] as MeetSeries[])
         .filter((s) => e.champions?.some((c) => c.series === s))
         .map((s) => SERIES_META[s].zh),
     };

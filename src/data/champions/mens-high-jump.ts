@@ -1,0 +1,71 @@
+import type { ChampionEntry } from "@/lib/types";
+
+/**
+ * 男子跳高 · 历届大赛冠军
+ * 奥运会、世界锦标赛、亚运会三大系列；逐届成绩来自数据核对面（见项目页来源）。
+ */
+export const mensHighJumpChampions: ChampionEntry[] = [
+  // —— 奥运会 ——
+  { series: "olympics", year: 2024, city: "巴黎", champion: "哈米什·克尔", country: "NZL", mark: "2.36", note: "新西兰首枚男子跳高奥运金牌；美国麦克尤恩2.36米银、巴尔希姆2.34米铜" },
+  { series: "olympics", year: 2020, city: "东京", champion: "穆塔兹·巴尔希姆", country: "QAT", mark: "2.37", note: "与坦贝里共享金牌：两人在2.37米后均无更多成功试跳，协商后并列（铜牌涅达塞考同为2.37米）" },
+  { series: "olympics", year: 2016, city: "里约热内卢", champion: "德里克·德劳因", country: "CAN", mark: "2.38", note: "巴尔希姆2.36米银、邦达连科2.33米铜" },
+  { series: "olympics", year: 2012, city: "伦敦", champion: "埃里克·金纳德", country: "USA", mark: "2.33" },
+  { series: "olympics", year: 2008, city: "北京", champion: "安德烈·西尔诺夫", country: "RUS", mark: "2.36" },
+  { series: "olympics", year: 2004, city: "雅典", champion: "斯特凡·霍尔姆", country: "SWE", mark: "2.36" },
+  { series: "olympics", year: 2000, city: "悉尼", champion: "谢尔盖·克柳金", country: "RUS", mark: "2.35" },
+  { series: "olympics", year: 1996, city: "亚特兰大", champion: "查尔斯·奥斯汀", country: "USA", mark: "2.39", or: true },
+  { series: "olympics", year: 1992, city: "巴塞罗那", champion: "哈维尔·索托马约尔", country: "CUB", mark: "2.34" },
+  { series: "olympics", year: 1988, city: "汉城", champion: "根纳季·阿夫杰延科", country: "URS", mark: "2.38", or: true },
+  { series: "olympics", year: 1984, city: "洛杉矶", champion: "迪特马尔·默根堡", country: "FRG", mark: "2.35", note: "西德默根堡2.35米夺金；2.39米世界纪录保持者朱建华仅以2.31米获铜" },
+  { series: "olympics", year: 1980, city: "莫斯科", champion: "格德·韦西希", country: "GDR", mark: "2.36", wr: true, note: "东德韦西希2.36米创世界纪录夺冠" },
+  { series: "olympics", year: 1976, city: "蒙特利尔", champion: "亚采克·弗绍瓦", country: "POL", mark: "2.25", or: true },
+  { series: "olympics", year: 1972, city: "慕尼黑", champion: "尤里·塔尔马克", country: "URS", mark: "2.23" },
+  { series: "olympics", year: 1968, city: "墨西哥城", champion: "迪克·福斯伯里", country: "USA", mark: "2.24", or: true },
+  { series: "olympics", year: 1964, city: "东京", champion: "瓦列里·布鲁梅尔", country: "URS", mark: "2.18", or: true },
+  { series: "olympics", year: 1960, city: "罗马", champion: "罗伯特·沙夫拉卡泽", country: "URS", mark: "2.16", or: true },
+  { series: "olympics", year: 1956, city: "墨尔本", champion: "查理·杜马斯", country: "USA", mark: "2.12", or: true },
+  { series: "olympics", year: 1952, city: "赫尔辛基", champion: "巴迪·戴维斯", country: "USA", mark: "2.04", or: true },
+  { series: "olympics", year: 1948, city: "伦敦", champion: "杰克·温特", country: "AUS", mark: "1.98" },
+  { series: "olympics", year: 1936, city: "柏林", champion: "科尼·约翰逊", country: "USA", mark: "2.03", or: true },
+  { series: "olympics", year: 1932, city: "洛杉矶", champion: "邓肯·麦克诺顿", country: "CAN", mark: "1.97" },
+  { series: "olympics", year: 1928, city: "阿姆斯特丹", champion: "鲍勃·金", country: "USA", mark: "1.94" },
+  { series: "olympics", year: 1924, city: "巴黎", champion: "哈罗德·奥斯本", country: "USA", mark: "1.98", or: true },
+  { series: "olympics", year: 1920, city: "安特卫普", champion: "迪克·兰登", country: "USA", mark: "1.93", or: true },
+  { series: "olympics", year: 1912, city: "斯德哥尔摩", champion: "阿尔玛·理查兹", country: "USA", mark: "1.93", or: true },
+  { series: "olympics", year: 1908, city: "伦敦", champion: "哈里·波特", country: "USA", mark: "1.90", or: true },
+  { series: "olympics", year: 1904, city: "圣路易斯", champion: "萨姆·琼斯", country: "USA", mark: "1.80" },
+  { series: "olympics", year: 1900, city: "巴黎", champion: "欧文·巴克斯特", country: "USA", mark: "1.90", or: true },
+  { series: "olympics", year: 1896, city: "雅典", champion: "埃勒里·克拉克", country: "USA", mark: "1.81", or: true },
+
+  // —— 世界锦标赛 ——
+  { series: "worlds", year: 2025, city: "东京", champion: "哈米什·克尔", country: "NZL", mark: "2.36" },
+  { series: "worlds", year: 2023, city: "布达佩斯", champion: "詹马尔科·坦贝里", country: "ITA", mark: "2.36" },
+  { series: "worlds", year: 2022, city: "尤金", champion: "穆塔兹·巴尔希姆", country: "QAT", mark: "2.37" },
+  { series: "worlds", year: 2019, city: "多哈", champion: "穆塔兹·巴尔希姆", country: "QAT", mark: "2.37" },
+  { series: "worlds", year: 2017, city: "伦敦", champion: "穆塔兹·巴尔希姆", country: "QAT", mark: "2.35" },
+  { series: "worlds", year: 2015, city: "北京", champion: "德里克·德劳因", country: "CAN", mark: "2.33" },
+  { series: "worlds", year: 2013, city: "莫斯科", champion: "博格丹·邦达连科", country: "UKR", mark: "2.41" },
+  { series: "worlds", year: 2011, city: "大邱", champion: "杰西·威廉姆斯", country: "USA", mark: "2.35" },
+  { series: "worlds", year: 2009, city: "柏林", champion: "雅罗斯拉夫·雷巴科夫", country: "RUS", mark: "2.32" },
+  { series: "worlds", year: 2007, city: "大阪", champion: "唐纳德·托马斯", country: "BAH", mark: "2.35" },
+  { series: "worlds", year: 2005, city: "赫尔辛基", champion: "尤里·克里马连科", country: "UKR", mark: "2.29" },
+  { series: "worlds", year: 2003, city: "巴黎", champion: "雅克·弗雷塔格", country: "RSA", mark: "2.35" },
+  { series: "worlds", year: 2001, city: "埃德蒙顿", champion: "马丁·布斯", country: "GER", mark: "2.33" },
+  { series: "worlds", year: 1999, city: "塞维利亚", champion: "维亚切斯拉夫·沃罗宁", country: "RUS", mark: "2.37" },
+  { series: "worlds", year: 1997, city: "雅典", champion: "哈维尔·索托马约尔", country: "CUB", mark: "2.37" },
+  { series: "worlds", year: 1995, city: "哥德堡", champion: "特洛伊·肯普", country: "BAH", mark: "2.37" },
+  { series: "worlds", year: 1993, city: "斯图加特", champion: "哈维尔·索托马约尔", country: "CUB", mark: "2.40" },
+  { series: "worlds", year: 1991, city: "东京", champion: "查尔斯·奥斯汀", country: "USA", mark: "2.38" },
+  { series: "worlds", year: 1987, city: "罗马", champion: "帕特里克·舍贝里", country: "SWE", mark: "2.38" },
+  { series: "worlds", year: 1983, city: "赫尔辛基", champion: "根纳季·阿夫杰延科", country: "URS", mark: "2.32" },
+
+  // —— 亚运会（1998 起） ——
+  { series: "asiangames", year: 2026, city: "名古屋", champion: "傅兆玄", country: "TPE", mark: "2.25" },
+  { series: "asiangames", year: 2022, city: "杭州", champion: "穆塔兹·巴尔希姆", country: "QAT", mark: "2.35", note: "赛会纪录" },
+  { series: "asiangames", year: 2018, city: "雅加达", champion: "王宇", country: "CHN", mark: "2.30" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "穆塔兹·巴尔希姆", country: "QAT", mark: "2.35", note: "赛会纪录" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "穆塔兹·巴尔希姆", country: "QAT", mark: "2.27" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "让-克洛德·拉巴特", country: "LIB", mark: "2.23" },
+  { series: "asiangames", year: 2002, city: "釜山", champion: "李镇泽", country: "KOR", mark: "2.23" },
+  { series: "asiangames", year: 1998, city: "曼谷", champion: "李镇泽", country: "KOR", mark: "2.27" },
+];

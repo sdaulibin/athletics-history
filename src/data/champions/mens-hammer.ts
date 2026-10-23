@@ -1,0 +1,70 @@
+import type { ChampionEntry } from "@/lib/types";
+
+/**
+ * 男子链球 · 历届大赛冠军
+ * 奥运会、世界锦标赛、亚运会三大系列；逐届成绩来自数据核对面（见项目页来源）。
+ */
+export const mensHammerChampions: ChampionEntry[] = [
+  // —— 奥运会 ——
+  { series: "olympics", year: 2024, city: "巴黎", champion: "伊桑·卡茨伯格", country: "CAN", mark: "84.12" },
+  { series: "olympics", year: 2020, city: "东京", champion: "沃伊切赫·诺维茨基", country: "POL", mark: "82.52" },
+  { series: "olympics", year: 2016, city: "里约热内卢", champion: "迪尔绍德·纳扎罗夫", country: "TJK", mark: "78.68" },
+  { series: "olympics", year: 2012, city: "伦敦", champion: "克里斯蒂安·帕尔什", country: "HUN", mark: "80.59" },
+  { series: "olympics", year: 2008, city: "北京", champion: "普里莫日·科兹穆斯", country: "SLO", mark: "82.02" },
+  { series: "olympics", year: 2004, city: "雅典", champion: "室伏广治", country: "JPN", mark: "82.91" },
+  { series: "olympics", year: 2000, city: "悉尼", champion: "希蒙·齐奥尔科夫斯基", country: "POL", mark: "80.02" },
+  { series: "olympics", year: 1996, city: "亚特兰大", champion: "巴拉兹·基什", country: "HUN", mark: "81.24" },
+  { series: "olympics", year: 1992, city: "巴塞罗那", champion: "安德烈·阿卜杜瓦利耶夫", country: "EUN", mark: "82.54" },
+  { series: "olympics", year: 1988, city: "汉城", champion: "谢尔盖·利特维诺夫", country: "URS", mark: "84.80", or: true },
+  { series: "olympics", year: 1984, city: "洛杉矶", champion: "尤哈·蒂艾宁", country: "FIN", mark: "78.08" },
+  { series: "olympics", year: 1980, city: "莫斯科", champion: "尤里·谢德赫", country: "URS", mark: "81.80", wr: true },
+  { series: "olympics", year: 1976, city: "蒙特利尔", champion: "尤里·谢德赫", country: "URS", mark: "77.52", or: true },
+  { series: "olympics", year: 1972, city: "慕尼黑", champion: "阿纳托利·邦达尔丘克", country: "URS", mark: "75.50", or: true },
+  { series: "olympics", year: 1968, city: "墨西哥城", champion: "久洛·齐沃茨基", country: "HUN", mark: "73.36", or: true },
+  { series: "olympics", year: 1964, city: "东京", champion: "罗穆亚尔德·克里姆", country: "URS", mark: "69.74", or: true },
+  { series: "olympics", year: 1960, city: "罗马", champion: "瓦西里·鲁登科夫", country: "URS", mark: "67.10", or: true },
+  { series: "olympics", year: 1956, city: "墨尔本", champion: "哈尔·康诺利", country: "USA", mark: "63.19", or: true },
+  { series: "olympics", year: 1952, city: "赫尔辛基", champion: "约瑟夫·切尔马克", country: "HUN", mark: "60.34", wr: true },
+  { series: "olympics", year: 1948, city: "伦敦", champion: "伊姆雷·内梅特", country: "HUN", mark: "56.07" },
+  { series: "olympics", year: 1936, city: "柏林", champion: "卡尔·海因", country: "GER", mark: "56.49", or: true },
+  { series: "olympics", year: 1932, city: "洛杉矶", champion: "帕特·奥卡拉汉", country: "IRL", mark: "53.92" },
+  { series: "olympics", year: 1928, city: "阿姆斯特丹", champion: "帕特·奥卡拉汉", country: "IRL", mark: "51.39" },
+  { series: "olympics", year: 1924, city: "巴黎", champion: "弗雷德·图特尔", country: "USA", mark: "53.29" },
+  { series: "olympics", year: 1920, city: "安特卫普", champion: "帕迪·瑞安", country: "USA", mark: "52.87" },
+  { series: "olympics", year: 1912, city: "斯德哥尔摩", champion: "马特·麦格拉思", country: "USA", mark: "54.74", or: true },
+  { series: "olympics", year: 1908, city: "伦敦", champion: "约翰·弗拉纳根", country: "USA", mark: "51.92", or: true },
+  { series: "olympics", year: 1904, city: "圣路易斯", champion: "约翰·弗拉纳根", country: "USA", mark: "51.23", or: true },
+  { series: "olympics", year: 1900, city: "巴黎", champion: "约翰·弗拉纳根", country: "USA", mark: "51.01", or: true },
+
+  // —— 世界锦标赛 ——
+  { series: "worlds", year: 2025, city: "东京", champion: "伊桑·卡茨伯格", country: "CAN", mark: "84.70" },
+  { series: "worlds", year: 2023, city: "布达佩斯", champion: "伊桑·卡茨伯格", country: "CAN", mark: "81.25" },
+  { series: "worlds", year: 2022, city: "尤金", champion: "帕维尔·法伊德克", country: "POL", mark: "81.98" },
+  { series: "worlds", year: 2019, city: "多哈", champion: "帕维尔·法伊德克", country: "", mark: "80.50" },
+  { series: "worlds", year: 2017, city: "伦敦", champion: "帕维尔·法伊德克", country: "POL", mark: "79.81" },
+  { series: "worlds", year: 2015, city: "北京", champion: "帕维尔·法伊德克", country: "POL", mark: "80.88" },
+  { series: "worlds", year: 2013, city: "莫斯科", champion: "帕维尔·法伊德克", country: "POL", mark: "81.97" },
+  { series: "worlds", year: 2011, city: "大邱", champion: "室伏广治", country: "JPN", mark: "81.24" },
+  { series: "worlds", year: 2009, city: "柏林", champion: "普里莫日·科兹穆斯", country: "SLO", mark: "80.84" },
+  { series: "worlds", year: 2007, city: "大阪", champion: "伊万·季洪", country: "BLR", mark: "83.63" },
+  { series: "worlds", year: 2005, city: "赫尔辛基", champion: "伊万·季洪", country: "BLR", mark: "83.89" },
+  { series: "worlds", year: 2003, city: "巴黎", champion: "伊万·季洪", country: "BLR", mark: "83.05" },
+  { series: "worlds", year: 2001, city: "埃德蒙顿", champion: "希蒙·齐奥尔科夫斯基", country: "POL", mark: "83.38" },
+  { series: "worlds", year: 1999, city: "塞维利亚", champion: "卡斯滕·科布斯", country: "GER", mark: "80.24" },
+  { series: "worlds", year: 1997, city: "雅典", champion: "海因茨·魏斯", country: "GER", mark: "81.78" },
+  { series: "worlds", year: 1995, city: "哥德堡", champion: "安德烈·阿卜杜瓦利耶夫", country: "", mark: "81.56" },
+  { series: "worlds", year: 1993, city: "斯图加特", champion: "安德烈·阿卜杜瓦利耶夫", country: "", mark: "81.64" },
+  { series: "worlds", year: 1991, city: "东京", champion: "尤里·谢德赫", country: "URS", mark: "81.70" },
+  { series: "worlds", year: 1987, city: "罗马", champion: "谢尔盖·利特维诺夫", country: "URS", mark: "83.06" },
+  { series: "worlds", year: 1983, city: "赫尔辛基", champion: "谢尔盖·利特维诺夫", country: "URS", mark: "82.68" },
+
+  // —— 亚运会（1998 起） ——
+  { series: "asiangames", year: 2026, city: "名古屋", champion: "苏赫罗布·霍贾耶夫", country: "UZB", mark: "74.38" },
+  { series: "asiangames", year: 2022, city: "杭州", champion: "王琦", country: "CHN", mark: "72.97" },
+  { series: "asiangames", year: 2018, city: "雅加达", champion: "阿什拉夫·阿姆加德·赛菲", country: "QAT", mark: "76.88" },
+  { series: "asiangames", year: 2014, city: "仁川", champion: "迪尔绍德·纳扎罗夫", country: "TJK", mark: "76.82" },
+  { series: "asiangames", year: 2010, city: "广州", champion: "迪尔绍德·纳扎罗夫", country: "TJK", mark: "76.44" },
+  { series: "asiangames", year: 2006, city: "多哈", champion: "迪尔绍德·纳扎罗夫", country: "TJK", mark: "74.43" },
+  { series: "asiangames", year: 2002, city: "釜山", champion: "室伏广治", country: "JPN", mark: "78.72", note: "赛会纪录" },
+  { series: "asiangames", year: 1998, city: "曼谷", champion: "室伏广治", country: "JPN", mark: "78.57", note: "赛会纪录" },
+];

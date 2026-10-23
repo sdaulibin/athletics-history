@@ -355,7 +355,9 @@ export default async function EventPage({ params }: PageProps) {
         <section className="mt-10">
           <h2 className="text-2xl font-bold text-track-950">历届大赛冠军</h2>
           <p className="mt-1 text-sm text-slate-500">
-            奥运会、世界锦标赛与亚运会的该项冠军及夺冠成绩。
+            {event.champions.some((c) => c.series === "majors")
+              ? "奥运会、世界锦标赛、亚运会三大系列，并附世界马拉松大满贯近十五年的冠军（因赛事取消或成绩低于总榜下限，个别届次从缺）。"
+              : "奥运会、世界锦标赛与亚运会的该项冠军及夺冠成绩。"}
           </p>
           <div className="mt-4">
             <ChampionsExplorer champions={event.champions} />
