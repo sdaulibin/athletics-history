@@ -113,6 +113,12 @@ export const COUNTRIES: Record<string, { zh: string; flag: string | null }> = {
   SUD: { zh: "苏丹", flag: "🇸🇩" },
   SUI: { zh: "瑞士", flag: "🇨🇭" },
   UGA: { zh: "乌干达", flag: "🇺🇬" },
+  ARE: { zh: "阿联酋", flag: "🇦🇪" },
+  BAR: { zh: "巴巴多斯", flag: "🇧🇧" },
+  PUR: { zh: "波多黎各", flag: "🇵🇷" },
+  SVK: { zh: "斯洛伐克", flag: "🇸🇰" },
+  VIE: { zh: "越南", flag: "🇻🇳" },
+  EST: { zh: "爱沙尼亚", flag: "🇪🇪" },
 };
 
 export const FLAG_ZH: Record<RecordFlag, string> = {

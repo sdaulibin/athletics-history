@@ -194,7 +194,7 @@ export default function Home() {
               </span>
               <div className="mt-4 text-xl font-semibold">即将收录</div>
               <p className="mt-2 text-sm leading-relaxed">
-                径赛全距离、跨栏、田赛与接力项目将陆续上线——每个项目一个数据文件，按男子百米的样板复制接入。
+                3000 米障碍、全能项目与其余赛事将陆续上线——每个项目一个数据文件，按已有项目的样板复制接入。
               </p>
             </div>
             <Link

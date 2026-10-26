@@ -11,6 +11,26 @@ import { mens400m } from "./events/mens-400m";
 import { mens400mChampions } from "./champions/mens-400m";
 import { womens400m } from "./events/womens-400m";
 import { womens400mChampions } from "./champions/womens-400m";
+import { mens110mHurdles } from "./events/mens-110m-hurdles";
+import { mens110mHurdlesChampions } from "./champions/mens-110m-hurdles";
+import { womens100mHurdles } from "./events/womens-100m-hurdles";
+import { womens100mHurdlesChampions } from "./champions/womens-100m-hurdles";
+import { mens400mHurdles } from "./events/mens-400m-hurdles";
+import { mens400mHurdlesChampions } from "./champions/mens-400m-hurdles";
+import { womens400mHurdles } from "./events/womens-400m-hurdles";
+import { womens400mHurdlesChampions } from "./champions/womens-400m-hurdles";
+import { mensDiscusThrow } from "./events/mens-discus-throw";
+import { mensDiscusThrowChampions } from "./champions/mens-discus-throw";
+import { womensDiscusThrow } from "./events/womens-discus-throw";
+import { womensDiscusThrowChampions } from "./champions/womens-discus-throw";
+import { mens4x100mRelay } from "./events/mens-4x100m-relay";
+import { mens4x100mRelayChampions } from "./champions/mens-4x100m-relay";
+import { womens4x100mRelay } from "./events/womens-4x100m-relay";
+import { womens4x100mRelayChampions } from "./champions/womens-4x100m-relay";
+import { mens4x400mRelay } from "./events/mens-4x400m-relay";
+import { mens4x400mRelayChampions } from "./champions/mens-4x400m-relay";
+import { womens4x400mRelay } from "./events/womens-4x400m-relay";
+import { womens4x400mRelayChampions } from "./champions/womens-4x400m-relay";
 import { mens800m } from "./events/mens-800m";
 import { mens800mChampions } from "./champions/mens-800m";
 import { womens800m } from "./events/womens-800m";
@@ -69,6 +89,16 @@ export const events = [
   { ...womens200m, champions: womens200mChampions },
   { ...mens400m, champions: mens400mChampions },
   { ...womens400m, champions: womens400mChampions },
+  { ...mens110mHurdles, champions: mens110mHurdlesChampions },
+  { ...womens100mHurdles, champions: womens100mHurdlesChampions },
+  { ...mens400mHurdles, champions: mens400mHurdlesChampions },
+  { ...womens400mHurdles, champions: womens400mHurdlesChampions },
+  { ...mensDiscusThrow, champions: mensDiscusThrowChampions },
+  { ...womensDiscusThrow, champions: womensDiscusThrowChampions },
+  { ...mens4x100mRelay, champions: mens4x100mRelayChampions },
+  { ...womens4x100mRelay, champions: womens4x100mRelayChampions },
+  { ...mens4x400mRelay, champions: mens4x400mRelayChampions },
+  { ...womens4x400mRelay, champions: womens4x400mRelayChampions },
   { ...mens800m, champions: mens800mChampions },
   { ...womens800m, champions: womens800mChampions },
   { ...mens1500m, champions: mens1500mChampions },
